@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Running the Project
+* `> npm start`
+
+Note: If this results in the app launching successfully but being hosted on a machine-specific name, preventing the browser from launching, run `> unsetenv HOST`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
