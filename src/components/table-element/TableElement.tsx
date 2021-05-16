@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import './table-element.scss'
 
 export interface AtomicElement {
 
@@ -33,16 +34,25 @@ export interface AtomicElement {
 }
 
 export interface AtomicElementProps {
-    atomicElement: AtomicElement
+    atomicElement?: AtomicElement;
 }
 
 const TableElement: FC<AtomicElementProps> = ({atomicElement}) => {
+
+    console.log('atomicElement=', atomicElement);
     
     return (
-        <div className="table-element">
-            <h1>{atomicElement.name}</h1>
-            <p>{atomicElement.atomicMass}</p>
-        </div>
+            <div className="grid-item">
+                {atomicElement
+                    ? <div className="table-element">
+                        <span>{atomicElement.symbol}</span>
+                        <br/>
+                        <span>{atomicElement.number}</span>
+                      </div>
+                    : <div className="table-filler">{/* intentionally empty to introduce gap */}</div>
+                }
+
+            </div>
     );
 }
 

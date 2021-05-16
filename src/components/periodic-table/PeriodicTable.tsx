@@ -1,23 +1,28 @@
 import { FC } from 'react';
-import TableElement, { AtomicElementProps } from '../table-element/TableElement';
+import TableElement, { AtomicElement, AtomicElementProps } from '../table-element/TableElement';
+import { elementListToElementMatrix } from './periodic-table.service';
+import './PeriodicTable.scss'
 
 
 export interface PeriodicTableProps {
-    atomicElements: AtomicElementProps[];
+    atomicElements: AtomicElement[];
+}
+export interface PeriodicTableRowProps {
+    atomicElements: AtomicElement[];
 }
 
 const PeriodicTable: FC<PeriodicTableProps> = ({atomicElements}) => {
-    const listOfElements = atomicElements.map((atomicElementProps) => <TableElement atomicElement={atomicElementProps.atomicElement} />);
-
-    const rows = Math.max(...atomicElements.map(ae => ae.atomicElement.xpos), 0);
-    const columns = Math.max(...atomicElements.map(ae => ae.atomicElement.ypos), 0);
+    const elementsMatrix = elementListToElementMatrix(atomicElements);
+    const tableOfElements = elementsMatrix.map((atomicElementProps: (AtomicElementProps|undefined), index: number) => {
+        return (<TableElement key={"table-element-" + index} atomicElement={atomicElementProps?.atomicElement} />);
+    });
     return (
-        <div className="table-element">
-            <p>rows: {rows}</p>
-            <p>columns: {columns}</p>
-            {listOfElements}
+        <div className="periodic-table">
+            {tableOfElements}
         </div>
     );
 }
+
+
 
 export default PeriodicTable;

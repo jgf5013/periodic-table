@@ -1,0 +1,18 @@
+@import './mixins.scss';
+
+.grid-item {
+    aspect-ratio: 1;
+    @include xs {
+        font-size: xx-small;
+    }
+    @include sm {
+        font-size: x-small;
+    }
+}
+.table-element {
+    border: dashed 1px;
+    border-radius: 3px;
+}
+.table-filler {
+    content: "";
+}
