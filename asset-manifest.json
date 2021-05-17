@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/jgf5013/periodic-table-game/static/css/main.ee74e43b.chunk.css",
-    "main.js": "/jgf5013/periodic-table-game/static/js/main.80e1a8a9.chunk.js",
-    "main.js.map": "/jgf5013/periodic-table-game/static/js/main.80e1a8a9.chunk.js.map",
-    "runtime-main.js": "/jgf5013/periodic-table-game/static/js/runtime-main.4a311703.js",
-    "runtime-main.js.map": "/jgf5013/periodic-table-game/static/js/runtime-main.4a311703.js.map",
-    "static/js/2.cb89a770.chunk.js": "/jgf5013/periodic-table-game/static/js/2.cb89a770.chunk.js",
-    "static/js/2.cb89a770.chunk.js.map": "/jgf5013/periodic-table-game/static/js/2.cb89a770.chunk.js.map",
-    "static/js/3.73c1ed20.chunk.js": "/jgf5013/periodic-table-game/static/js/3.73c1ed20.chunk.js",
-    "static/js/3.73c1ed20.chunk.js.map": "/jgf5013/periodic-table-game/static/js/3.73c1ed20.chunk.js.map",
-    "index.html": "/jgf5013/periodic-table-game/index.html",
-    "static/css/main.ee74e43b.chunk.css.map": "/jgf5013/periodic-table-game/static/css/main.ee74e43b.chunk.css.map",
-    "static/js/2.cb89a770.chunk.js.LICENSE.txt": "/jgf5013/periodic-table-game/static/js/2.cb89a770.chunk.js.LICENSE.txt"
+    "main.css": "/periodic-table-game/static/css/main.ee74e43b.chunk.css",
+    "main.js": "/periodic-table-game/static/js/main.80e1a8a9.chunk.js",
+    "main.js.map": "/periodic-table-game/static/js/main.80e1a8a9.chunk.js.map",
+    "runtime-main.js": "/periodic-table-game/static/js/runtime-main.95955be7.js",
+    "runtime-main.js.map": "/periodic-table-game/static/js/runtime-main.95955be7.js.map",
+    "static/js/2.cb89a770.chunk.js": "/periodic-table-game/static/js/2.cb89a770.chunk.js",
+    "static/js/2.cb89a770.chunk.js.map": "/periodic-table-game/static/js/2.cb89a770.chunk.js.map",
+    "static/js/3.73c1ed20.chunk.js": "/periodic-table-game/static/js/3.73c1ed20.chunk.js",
+    "static/js/3.73c1ed20.chunk.js.map": "/periodic-table-game/static/js/3.73c1ed20.chunk.js.map",
+    "index.html": "/periodic-table-game/index.html",
+    "static/css/main.ee74e43b.chunk.css.map": "/periodic-table-game/static/css/main.ee74e43b.chunk.css.map",
+    "static/js/2.cb89a770.chunk.js.LICENSE.txt": "/periodic-table-game/static/js/2.cb89a770.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4a311703.js",
+    "static/js/runtime-main.95955be7.js",
     "static/js/2.cb89a770.chunk.js",
     "static/css/main.ee74e43b.chunk.css",
     "static/js/main.80e1a8a9.chunk.js"
