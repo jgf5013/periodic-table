@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { AppContextProvider } from './app-context';
 import './App.scss';
 import PeriodicTable from './components/periodic-table/PeriodicTable';
+import QuizItem from './components/quiz-item/QuizItem';
 import * as elementsJson from './elements.json';
-import logo from './logo.svg';
 
 class App extends Component {
   render() {
@@ -10,7 +11,10 @@ class App extends Component {
     <div className="App">
       <div className="App-container">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        <PeriodicTable atomicElements={elementsJson.elements}></PeriodicTable>
+        <AppContextProvider>
+          <QuizItem/>
+          <PeriodicTable atomicElements={elementsJson.elements}></PeriodicTable>
+        </AppContextProvider>
       </div>
     </div>
     );

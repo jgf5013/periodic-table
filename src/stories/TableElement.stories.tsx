@@ -1,7 +1,7 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
 
-import TableElement, { AtomicElementProps } from '../components/table-element/TableElement';
+import TableElement, { AtomicElementProps } from '../components/atomic-element/AtomicElement';
 
 export default {
   title: 'Example/TableElement',

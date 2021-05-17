@@ -1,14 +1,15 @@
 import { FC } from 'react';
-import TableElement, { AtomicElement, AtomicElementProps } from '../table-element/TableElement';
+import { IAtomicElement } from '../atomic-element/atomic-element';
+import TableElement, { AtomicElementProps } from '../atomic-element/AtomicElement';
 import { elementListToElementMatrix } from './periodic-table.service';
-import './PeriodicTable.scss'
+import './PeriodicTable.scss';
 
 
 export interface PeriodicTableProps {
-    atomicElements: AtomicElement[];
+    atomicElements: IAtomicElement[];
 }
 export interface PeriodicTableRowProps {
-    atomicElements: AtomicElement[];
+    atomicElements: IAtomicElement[];
 }
 
 const PeriodicTable: FC<PeriodicTableProps> = ({atomicElements}) => {
